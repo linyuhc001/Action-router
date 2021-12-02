@@ -157,6 +157,7 @@ CONFIG_PACKAGE_luci-app-serverchan=y #微信推送
 # CONFIG_PACKAGE_luci-app-adguardhome is not set #ADguardhome
 # CONFIG_PACKAGE_luci-app-uugamebooster is not set
 # CONFIG_PACKAGE_uugamebooster is not set
+# CONFIG_PACKAGE_luci-app-dockerman is not set #docker
 EOF
 
 # ShadowsocksR插件:
