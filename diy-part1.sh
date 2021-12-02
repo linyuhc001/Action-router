@@ -15,6 +15,7 @@
 # 添加第三方软件包
 # git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
 # git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+rm -rf package/lean/luci-app-jd-serverchan
 git clone --branch v1.80 https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
 # rm -rf package/lean/luci-app-jd-dailybonus
 # git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
