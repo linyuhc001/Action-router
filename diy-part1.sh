@@ -31,7 +31,7 @@ rm -rf OpenClash
 cd openwrt
 
 # 替换更新默认argon主题
-rm -rf package/lean/luci-theme-argon && git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon -b 18.06
+rm -rf feeds/luci/themes/luci-theme-argon && git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon -b 18.06
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 # 替换更新passwall和ssrplus+
@@ -243,9 +243,9 @@ CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
 # 
 # DDNS插件
 #
-# CONFIG_PACKAGE_luci-app-ddns is not set #DDNS服务
-# CONFIG_PACKAGE_ddns-scripts is not set
-# CONFIG_PACKAGE_ddns-scripts_aliyun is not set
+CONFIG_PACKAGE_luci-app-ddns=y #DDNS服务
+CONFIG_PACKAGE_ddns-scripts=y
+CONFIG_PACKAGE_ddns-scripts_aliyun=y
 # CONFIG_PACKAGE_ddns-scripts_cloudflare.com-v4 is not set
 # CONFIG_PACKAGE_ddns-scripts_dnspod is not set
 #
