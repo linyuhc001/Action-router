@@ -15,9 +15,9 @@
 # 添加第三方软件包
 # git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
 # git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
-rm -rf package/lean/luci-app-serverchan
-git clone --branch v1.80 https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
-svn co https://github.com/linkease/istore/trunk/luci/luci-app-store package/luci-app-store
+# rm -rf package/lean/luci-app-serverchan
+# git clone --branch v1.80 https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
+# svn co https://github.com/linkease/istore/trunk/luci/luci-app-store package/luci-app-store
 # rm -rf package/lean/luci-app-jd-dailybonus
 # git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
 # svn co https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash package/luci-app-openclash
@@ -25,11 +25,11 @@ svn co https://github.com/linkease/istore/trunk/luci/luci-app-store package/luci
 # git clone https://github.com/garypang13/luci-theme-edge package/luci-theme-edge -b 18.06
 
 # 添加openclash
-cd ..
-git clone https://github.com/vernesong/OpenClash
-mv ./OpenClash/luci-app-openclash ./openwrt/package/luci-app-openclash
-rm -rf OpenClash
-cd openwrt
+# cd ..
+# git clone https://github.com/vernesong/OpenClash
+# mv ./OpenClash/luci-app-openclash ./openwrt/package/luci-app-openclash
+# rm -rf OpenClash
+# cd openwrt
 
 # 替换更新默认argon主题
 rm -rf feeds/luci/themes/luci-theme-argon && git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon -b 18.06
@@ -154,7 +154,7 @@ cat >> .config <<EOF
 # CONFIG_PACKAGE_luci-app-openclashis not set #OpenClash
 # CONFIG_PACKAGE_luci-app-jd-dailybonus=y #京东签到
 CONFIG_PACKAGE_luci-app-serverchan=y #微信推送
-CONFIG_PACKAGE_luci-app-store=y
+# CONFIG_PACKAGE_luci-app-store=y
 CONFIG_PACKAGE_iptables-mod-nat-extra=y
 CONFIG_PACKAGE_kmod-nf-nat=y
 # CONFIG_PACKAGE_luci-app-eqos is not set #IP限速
